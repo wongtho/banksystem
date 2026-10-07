@@ -18,9 +18,8 @@ public class TransactionController {
         return "Transaction controller is working!";
     }
 
-
-    @PostMapping("/transactions/{id}")
-    public ResponseEntity<String> createTransaction(@PathVariable Long id, @RequestBody Transaction transaction) {
+    @PostMapping("/transaction/{id}")
+    public ResponseEntity<String> createTransaction(@PathVariable String id, @RequestBody Transaction transaction) {
         // Logic to create a transaction for the account with the given ID
         return ResponseEntity.ok("Transaction created successfully for account ID: " + id);
     }

@@ -14,7 +14,7 @@ public class Transaction {
     private TransactionType accountType;
     private String fromAccount;
     private String toAccount;
-    private Integer amount;
+    private Double amount;
     private TransactionChannel channel;
     private String description;
 }
