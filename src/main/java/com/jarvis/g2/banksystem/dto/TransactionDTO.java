@@ -8,7 +8,7 @@ import com.jarvis.g2.banksystem.enums.TransactionType;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor 
-public class Transaction {
+public class TransactionDTO {
     public String transactionId;
     public LocalDateTime timestamp;
     public TransactionType accountType;

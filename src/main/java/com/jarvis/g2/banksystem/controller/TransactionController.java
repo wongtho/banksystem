@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jarvis.g2.banksystem.dto.Transaction;
+import com.jarvis.g2.banksystem.dto.TransactionDTO;
 
 @RestController
 @RequestMapping("/api")
@@ -19,7 +19,7 @@ public class TransactionController {
     }
 
     @PostMapping("/transaction/{id}")
-    public ResponseEntity<String> createTransaction(@PathVariable String id, @RequestBody Transaction transaction) {
+    public ResponseEntity<String> createTransaction(@PathVariable String id, @RequestBody TransactionDTO transaction) {
         // Logic to create a transaction for the account with the given ID
         System.out.println(transaction.timestamp.toString());
         System.out.println(transaction.accountType.toString());
