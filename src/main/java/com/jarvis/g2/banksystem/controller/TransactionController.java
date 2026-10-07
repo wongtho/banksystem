@@ -21,6 +21,13 @@ public class TransactionController {
     @PostMapping("/transaction/{id}")
     public ResponseEntity<String> createTransaction(@PathVariable String id, @RequestBody Transaction transaction) {
         // Logic to create a transaction for the account with the given ID
+        System.out.println(transaction.timestamp.toString());
+        System.out.println(transaction.accountType.toString());
+        System.out.println(transaction.fromAccount.toString());
+        System.out.println(transaction.toAccount.toString());
+        System.out.println(transaction.amount.toString());
+        System.out.println(transaction.channel.toString());
+        System.out.println(transaction.description.toString());
         return ResponseEntity.ok("Transaction created successfully for account ID: " + id);
     }
 }

@@ -9,12 +9,12 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor 
 public class Transaction {
-    private String transactionId;
-    private LocalDateTime timestamp;
-    private TransactionType accountType;
-    private String fromAccount;
-    private String toAccount;
-    private Double amount;
-    private TransactionChannel channel;
-    private String description;
+    public String transactionId;
+    public LocalDateTime timestamp;
+    public TransactionType accountType;
+    public String fromAccount;
+    public String toAccount;
+    public Double amount;
+    public TransactionChannel channel;
+    public String description;
 }
